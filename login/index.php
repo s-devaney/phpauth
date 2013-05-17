@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>PHPAuth</title>
+	<title>PHPAuth - login</title>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="Sam Devaney" />
@@ -17,8 +17,11 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<h1>Homepage</h1>
-	<a href="login">Login</a><br />
-	<a href="register">Register</a>
+	<h1>Login</h1>
+	<form action="login.php" method="POST">
+		<label for="username">Username: </label><input type="text" name="username" /><br />
+		<label for="password">Password: </label><input type="password" name="password" /><br />
+		<input type="submit" value="Login" />
+	</form>
 </body>
 </html>
